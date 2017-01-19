@@ -7,6 +7,8 @@
 //
 
 import XCTest
+@testable import RomanNumeralCalculator
+
 
 class RomanNumeralCalculatorTests: XCTestCase {
     
@@ -25,6 +27,11 @@ class RomanNumeralCalculatorTests: XCTestCase {
         // Use XCTAssert and related functions to verify your tests produce the correct results.
     }
     
+    func testToRoman(){
+    
+        XCTAssertEqual(toRoman(1), "I")
+    
+    }
     func testPerformanceExample() {
         // This is an example of a performance test case.
         self.measure {
